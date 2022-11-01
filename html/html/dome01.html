@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script> 
+            function changeImage()
+            {
+                element = document.getElementById('myimage')
+                console.log(element)
+                if(element.src.match('logo'))
+                {
+                    element.src="../img/店铺街.png";
+                }
+                else{
+                    element.src="../img/店铺logo.png";
+                }
+            }
+        </script>
+        <img id="myimage" onclick="changeImage()" border="0" src="../img/店铺街.png" width="100" height="180">
+        <p>点击切换图片</p>
+
+    </body>
+</html>
