@@ -1,17 +1,22 @@
 
 a{
     text-decoration: none;
+    text-align: center;
+}
+.center{
+    text-align: center;
 }
 .color:visited{
     color: black;
 }
 .el-b{
-    letter-spacing: 30px;
+    letter-spacing: 50px;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 30px;
 }
 .font{
-    letter-spacing: 10px;
+    letter-spacing: 20px;
+    font-size: 30px;
 }
 .color:visited{
     color: black;
