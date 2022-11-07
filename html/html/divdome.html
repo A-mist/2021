@@ -3,12 +3,34 @@
     <head>
         <meta charset="utf-8">
         <title>div布局练习</title>
+        <link rel="stylesheet" href="../style/css.css">
+        <style>
+            .info{
+                width: 80%;
+                height: 100px;
+                background-color: rgba(0,0,0,0.2);
+                color:gold;
+                position: absolute;
+                left:left;
+                top:1140px;
+                transition:top 800ms linear;
+                /*opacity:0.2;*/
+            }
+            .outter:hover .info{
+                top:40px;
+            }
+        </style>
     </head>
     <body>
         <div id="container" style="width: 100%;">
-            <div id="header" style="background-color: #FFA500; text-align: center; clear: both;"><h1>网页标题</h1></div>
+            <div id="header" style="background-color: #FFA500; text-align: center; clear: both; height: 40px;"><h1>网页标题</h1></div>
             <div id="menu" style="background-color: #cab998; width:10%; float: left; height: 1200px;">左侧导航<br>左侧导航<br>左侧导航<br></div>
-            <div id="conten" style="background-color: #FFa; width:80%; height: 1200px; float: left;">内容</div>
+            <div id="conten" style="background-color: #FFa; width:80%; height: 1200px; float: left;" class="outter">内容
+                <div class="info" style="float: left;">
+                    这是说明文字<br>
+                    这是详明的详情
+                </div>
+            </div>
             <div id="conten" style="background-color: #cab998; width:10%; height: 1200px; float: left;">广告</div>
             <div id="footer" style="background-color: #FFA500; clear:both; text-align: center;">版权 © runoob.com</div>
         </div>
